@@ -10,4 +10,4 @@ def move_mouse():
 
 while True:
     move_mouse()
-    time.sleep(5)  # replace 5 with the number of seconds you want to wait
+    time.sleep(1)  # replace 5 with the number of seconds you want to wait
