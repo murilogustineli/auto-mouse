@@ -1,12 +1,14 @@
 import pyautogui
 import time
+import random
 
 
 # Function to keep moving the mouse automatically
 def move_mouse():
     # current mouse positions
     x, y = pyautogui.position()
-    pyautogui.moveTo(x + 5, y + 5)
+    rand = random.randint(1, 10)
+    pyautogui.moveTo(x + rand, y + rand)
 
 while True:
     move_mouse()
