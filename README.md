@@ -1,2 +1,2 @@
 # Auto Mouse
-Repo with code to move the mouse automatically
+Repo with code to move the mouse automatically.
