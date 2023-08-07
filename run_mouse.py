@@ -21,3 +21,4 @@ def move_mouse(wait_time=1):
 # Run function
 if __name__ == "__main__":
     move_mouse()
+    
