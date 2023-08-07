@@ -5,13 +5,18 @@ import random
 
 # Function to keep moving the mouse automatically
 def move_mouse(wait_time=1):
+    count = 0
     while True:
         # current mouse positions
         x, y = pyautogui.position()
-        pyautogui.moveTo(x + 10, y)
+        # Move mouse
+        if count % 2 == 0:
+            pyautogui.moveTo(x + 10, y)
+        else:
+            pyautogui.moveTo(x - 10, y)
         time.sleep(wait_time)  # replace 1 with the number of seconds you want to wait
-        pyautogui.moveTo(x - 10, y)
-        time.sleep(wait_time)
+        count += 1 
+
     # rand = random.randint(1, 100)
     # if 0 < rand <= 25:
     #     pyautogui.moveTo(x + 10, y + 10)
